@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanksgiving Recipes</title>
+    <script src="https://kit.fontawesome.com/a4fdca3af8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><img src="delicious_logo black.jpg" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Thanksgiving Title Section -->
+    <header class="thanksgiving-section">
+        <img src="maple_leaf-removebg-preview.png" alt="" class="bgimg">
+        <h1>THANKS<br>GIVING</h1>
+        <p>Thanksgiving's Most Wanted <br> <br><br>Thanksgiving is a cherished holiday celebrated with family, friends, and an abundance of gratitude. Rooted in a tradition of giving thanks for the harvest, it’s a time to reflect on life’s blessings and share meaningful moments with loved ones. The holiday is marked by gatherings around tables filled with seasonal favorites like roast turkey, mashed potatoes, stuffing, cranberry sauce, and pumpkin pie. Thanksgiving is also known for its cozy, festive atmosphere, with homes adorned in autumn colors and aromas of warm spices filling the air.</p>
+    </header>
+
+    <!-- Top Recipes Section -->
+    <section class="recipes-section">
+        <h2 class="underline">Top Recipes</h2>
+        <div class="recipes-container">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card">
+                <img src="roast_chicken-removebg-preview.png" alt="Roast Chicken">
+                <h3>Roast Chicken</h3>
+                <p>Roast chicken is a timeless comfort food that combines juicy, tender meat with a perfectly crispy, golden skin, infused with herbs and spices. Its mouthwatering aroma fills the kitchen, and the flavors are endlessly customizable, from classic lemon and garlic to bold paprika and honey-glaze.</p>
+                <button class="get-receipt">Get Receipt</button>
+            </div>
+            <!-- Recipe Card 2 -->
+            <div class="recipe-card">
+                <img src="pie-removebg-preview.png" alt="Holiday Pie" class="pie">
+                <h3>Holiday Pie</h3>
+                <p>Honey pie is a delightful, sweet dessert that brings a touch of nostalgia with its rich, comforting flavors. The pie has a smooth, custard-like filling made with honey, butter, cream, and eggs, giving it a luscious, creamy texture</p>
+                <button class="get-receipt">Get Receipt</button>
+            </div>
+            <!-- Recipe Card 3 -->
+            <div class="recipe-card">
+                <img src="chicken_stuffing-removebg-preview.png" alt="Chicken Stuffing" class="stuff">
+                <h3>Chicken Stuffing</h3>
+                <p>Chicken stuffing is a savory, aromatic dish that’s the perfect complement to roasted or baked chicken, especially during holiday meals. Traditionally made with a base of bread cubes or breadcrumbs</p>
+                <button class="get-receipt">Get Receipt</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="text-content">
+            <h2 class="heading">Turkey 101</h2>
+          <p class="description">
+            Roasted turkey is a classic dish that's both delicious and nutritious. Its lean protein is packed with essential vitamins and minerals, making it a healthy choice for any meal. Whether you prefer it plain, with gravy, or in a variety of sandwiches and casseroles, roasted turkey is a versatile option that can be enjoyed year-round. Its rich flavor and satisfying texture make it a crowd-pleaser, perfect for both casual gatherings and festive occasions.
+          </p>
+            <button class="btn">Get Receipt</button>
+        </div>
+       <div class="image-content">
+                <img src="turkey-removebg-preview.png" alt="Turkey Dish" class="image">
+         </div>
+    </div>
+ 
+    <div class="video">
+        <div class="left-side">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dJZeAAs2V2c?si=ZQGSNqrCJ63YuB1O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="right-side">
+            <h1 class="top">Top Video</h1>
+            <p class="description1">Check out our top cooking videos on YouTube! From quick and easy recipes to gourmet dishes, our videos guide you step-by-step to make delicious meals at home. Perfect for food lovers and beginners alike, subscribe for mouthwatering content that inspires every cook.</p>
+            <button class="all">All videos</button>
+              
+        </div>
+    </div> 
+    <div class="book">
+      <img src="delicious book.jpg" alt="" >
+      <h1> TO ORDER FILL THE FORM</h1>
+    </div>
+
+    <form id="customerForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+            <div id="nameError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            <div id="phoneError" class="error"></div>
+        </div>
+        <button type="button" onclick="validateForm()">Submit</button>
+        <div id="submitSuccess" class="submit-success"></div>
+    </form>
+    
+    <div class="container">
+        <div class="text-content">
+            <h2 class="heading">Need A professional chef</h2>
+          <p class="description">
+            Booking a professional chef for your next event is a fantastic way to elevate your dining experience. These culinary experts bring years of experience, creativity, and a passion for food to your table. Whether you're hosting an intimate dinner party, a corporate event, or a grand wedding, a professional chef can tailor a menu to your specific needs and preferences. From gourmet appetizers to decadent desserts, they'll handle every aspect of the culinary experience, allowing you to relax and enjoy the festivities.
+          </p>
+            <button class="btn">Hire Now</button>
+        </div>
+       <div class="image-content">
+                <img src="Chef.jpg" alt="Turkey Dish" class="image">
+         </div>
+    </div>
+    <footer>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
+    <script src="submit.js"></script>
+</body>
+</html>
